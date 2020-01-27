@@ -28,14 +28,20 @@ m.sendMessage(args)
 });
 
 client.on('message', msg => {
-    if (msg.content === '<@528390233499107338>') {
+    if (msg.content === '<@670723245258965042>') {
       msg.channel.sendMessage('يمديك تكتب بس m!help')
     }
   });
 
 client.on('message', msg => {
-  if (msg.content === 'Version') {
+  if (msg.content === 'm!Version') {
     msg.channel.sendMessage('0.0.1.1!')
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'السلام عليكم') {
+    msg.channel.sendMessage('ارحب اهلا وسهلا !')
   }
 });
 	
